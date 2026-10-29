@@ -1,0 +1,58 @@
+<div
+  class="h-screen w-full bg-linear-to-r from-cyan-500 to-blue-500 flex items-center justify-center"
+>
+  <div
+    class="h-auto w-xl bg-white p-10 rounded-xl flex flex-col justify-center"
+  >
+    <h3 class="text-center text-2xl font-semibold mb-10">Registro</h3>
+    <div class="mb-3 flex flex-col">
+      <label for="email" class="text-sm mb-2">Correo electrónico</label>
+      <input
+        class="border border-gray-200 px-2 py-2 rounded-md"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="example@gmail.com"
+      />
+    </div>
+    <div class="mb-3 flex flex-col">
+      <label for="password" class="text-sm mb-2">Contraseña</label>
+      <input
+        class="border border-gray-200 px-2 py-2 rounded-md"
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Contraseña"
+      />
+    </div>
+    <div class="mb-3 flex flex-col">
+      <label for="repassword" class="text-sm mb-2">Confirmar contraseña</label>
+      <input
+        class="border border-gray-200 px-2 py-2 rounded-md"
+        type="password"
+        name="repassword"
+        id="repassword"
+        placeholder="Confirmar contraseña"
+      />
+    </div>
+    <div class="mb-6 flex flex-row justify-start items-center gap-2">
+      <input
+        class="size-5 accent-blue-500"
+        type="checkbox"
+        id="terms"
+        name="terms"
+      />
+      <label for="terms" class="text-sm">Acepto los términos y condiciones</label>
+    </div>
+    <div class="flex flex-col items-center justify-center">
+      <button
+        class="mb-3 px-10 py-2 rounded-xl cursor-pointer bg-blue-950 text-white block"
+      >
+        Completar registro
+      </button>
+      <a routerLink="login" class="text-blue-600 underline cursor-pointer"
+        >Ya tienes cuenta?</a
+      >
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div>
+    <div
+    class="h-auto shadow-md md:w-xl w-full bg-white p-10 rounded-xl flex flex-col justify-center"
+  >
+    <h3 class="text-center text-2xl font-semibold mb-10">Agregar Nueva Cuenta</h3>
+    <div class="mb-3 flex flex-col">
+      <label for="email" class="text-sm mb-2">Nombre</label>
+      <input
+        class="border border-gray-200 px-2 py-2 rounded-md"
+        type="name"
+        name="name"
+        id="name"
+        placeholder="Nueva cuenta"
+      />
+    </div>
+    <div class="mb-3 flex flex-col">
+      <label for="description" class="text-sm mb-2">Descripción</label>
+      <textarea
+        class="border border-gray-200 px-2 py-2 rounded-md"
+        type="text"
+        name="description"
+        id="description"
+        placeholder="Descripción"
+      ></textarea>
+    </div>
+    <div class="mb-5 flex flex-col">
+        <label for="accountType" class="text-sm mb-2">Tipo de cuenta</label>
+        <Select id="accountType" name="accountType" class="border border-gray-200 px-2 py-2 rounded-md">
+            <Option>Ahorro</Option>
+            <Option>Tarjeta de credito</Option>
+            <Option>Corriente</Option>
+            <Option>Efectivo</Option>
+        </Select>
+    </div>
+    <div class="flex flex-row justify-end">
+      <button
+        class="mb-3 px-10 py-2 rounded-xl cursor-pointer bg-blue-950 text-white block"
+      >
+        Crear cuenta
+      </button>
+    </div>
+  </div>
+</div>
