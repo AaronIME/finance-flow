@@ -23,7 +23,7 @@ export class Sidebar {
     {
       title: "Objetivos",
       icon: LucideFileText,
-      route: "/dashboard/accounts"
+      route: "/dashboard/goals"
     },
     {
       title: "Gastos",
