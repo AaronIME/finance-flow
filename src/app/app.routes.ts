@@ -16,7 +16,7 @@ export const routes: Routes = [
         title: 'Crear cuenta',
       },
       { 
-        path: 'edit-account',
+        path: 'edit-account/:id',
         loadComponent: () => import('./pages/create-update-account-page/create-update-account-page.component'),
         title: 'Editar cuenta',
       },
@@ -24,6 +24,56 @@ export const routes: Routes = [
         path: 'accounts',
         loadComponent: () => import('./pages/accounts-page/accounts-page.component'),
         title: 'Cuentas',
+      },
+      {
+        path: 'expenses',
+        loadComponent: () => import('./pages/expenses-page/expenses-page.component'),
+        title: 'Gastos'
+      },
+      {
+        path: 'expense/:id',
+        loadComponent: () => import('./pages/expense-page/expense-page.component'),
+        title: 'Gasto'
+      },
+      {
+        path: 'create-expense',
+        loadComponent: () => import('./pages/create-update-expense-page/create-update-expense-page.component'),
+        title: 'Crear Gasto'
+      },
+      {
+        path: 'edit-expense/:id',
+        loadComponent: () => import('./pages/create-update-expense-page/create-update-expense-page.component'),
+        title: 'Editar Gasto'
+      },
+      {
+        path: 'budgets',
+        loadComponent: () => import('./pages/budgets-page/budgets-page.component'),
+        title: 'Presupuestos'
+      },
+      {
+        path: 'create-budget',
+        loadComponent: () => import('./pages/create-update-budget-page/create-update-budget-page.component'),
+        title: 'Crear Presupuesto'
+      },
+      {
+        path: 'edit-budget/:id',
+        loadComponent: () => import('./pages/create-update-budget-page/create-update-budget-page.component'),
+        title: 'Editar Presupuesto'
+      },
+      {
+        path: 'goals',
+        loadComponent: () => import('./pages/goals-page/goals-page.component'),
+        title: 'Objetivos'
+      },
+      {
+        path: 'create-goal',
+        loadComponent: () => import('./pages/create-update-goal-page/create-update-goal-page.component'),
+        title: 'Crear Objetivo'
+      },
+      {
+        path: 'edit-goal/:id',
+        loadComponent: () => import('./pages/create-update-goal-page/create-update-goal-page.component'),
+        title: 'Editar Objetivo'
       },
       {
         path: '**',

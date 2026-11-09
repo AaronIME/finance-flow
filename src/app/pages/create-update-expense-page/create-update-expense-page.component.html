@@ -1,0 +1,86 @@
+<div class="flex flex-row justify-center">
+  <div
+    class="h-auto shadow-lg md:w-xl w-full bg-white p-10 rounded-xl flex flex-col justify-center"
+  >
+    <h3 class="text-center text-2xl font-semibold mb-10">
+      Agregar Nuevo Gasto
+    </h3>
+    <div class="mb-3 flex flex-col">
+      <label for="amount" class="text-sm mb-2">Monto</label>
+      <input
+        class="border border-gray-200 px-2 py-2 rounded-md"
+        type="number"
+        name="amount"
+        id="amount"
+        placeholder="500"
+      />
+    </div>
+    <div class="mb-3 flex flex-col">
+      <label for="description" class="text-sm mb-2">Descripción</label>
+      <textarea
+        class="border border-gray-200 px-2 py-2 rounded-md"
+        type="text"
+        name="description"
+        id="description"
+        placeholder="Descripción"
+      ></textarea>
+    </div>
+    <div class="mb-5 flex flex-col">
+      <label for="date" class="text-sm mb-2">Fecha</label>
+      <input
+        id="date"
+        name="date"
+        type="date"
+        class="border border-gray-200 px-2 py-2 rounded-md"
+        placeholder="2026-01-01"
+      />
+    </div>
+    
+    <div class="mb-5 flex flex-col">
+      <label for="Category" class="text-sm mb-2">Categoría</label>
+      <Select
+        class="border border-gray-200 px-2 py-2 rounded-md"
+        placeholder="Selecciona una categoría"
+        name="category"
+        id="category"
+      >
+        <option value="1">Alimentación</option>
+        <option value="2">Transporte</option>
+        <option value="3">Vivienda</option>
+        <option value="4">Educación</option>
+        <option value="5">Salud</option>
+        <option value="6">Diversión</option>
+        <option value="7">Otros</option>
+      </Select>
+    </div>
+    <div class="mb-5 flex flex-col">
+      <label for="type" class="text-sm mb-2">Tipo</label>
+      <Select
+        class="border border-gray-200 px-2 py-2 rounded-md"
+        placeholder="Selecciona un tipo"
+        name="type"
+        id="type"
+      >
+        <option value="1">Gasto</option>
+        <option value="2">Ingreso</option>
+      </Select>
+    </div>
+    <div class="mb-3 flex flex-col">
+      <label for="notes" class="text-sm mb-2">Notas</label>
+      <textarea
+        class="border border-gray-200 px-2 py-2 rounded-md"
+        type="text"
+        name="notes"
+        id="notes"
+        placeholder="Notas"
+      ></textarea>
+    </div>
+    <div class="flex flex-row justify-end">
+      <button
+        class="mb-3 px-10 py-2 rounded-xl cursor-pointer bg-blue-950 text-white block"
+      >
+        Crear gasto
+      </button>
+    </div>
+  </div>
+</div>

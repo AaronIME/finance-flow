@@ -1,0 +1,58 @@
+<div class="w-full flex flex-col">
+  <h3 class="text-2xl font-bold mb-3">Mis presupuestos</h3>
+  <div class="w-full mb-3">
+    <div class="w-full flex justify-end mb-4">
+      <a
+        routerLink="/dashboard/create-budget"
+        class="cursor-pointer flex flex-row gap-2 items-center bg-blue-950 text-white px-10 py-2 rounded-xl"
+      >
+        <span>Crear Presupuesto</span>
+        <svg class="size-5 font-bold" lucidePlus></svg>
+      </a>
+    </div>
+    <a
+      routerLink="/dashboard/edit-budget/1"
+      class="w-full bg-white rounded-lg px-4 py-4 flex flex-col justify-between mb-3 shadow-lg cursor-pointer hover:bg-gray-200 transition-colors"
+    >
+      <div class="flex flex-row justify-between gap-3 mb-3">
+        <p class="text-lg font-bold">Nombre</p>
+        <p class="text-sm font-semibold">17/05/2026 - 15/06/2026</p>
+      </div>
+      <div class="w-full h-6 rounded-lg bg-gray-300 mb-3">
+      <div class="w-[70%] h-6 rounded-lg bg-red-400 mb-3"></div>
+        <p>500 / 600</p>
+      </div>
+      <div class="flex flex-row justify-end">
+        <button
+          class="bg-red-500 flex-initial text-white py-2 rounded-lg px-10"
+          (click)="$event.preventDefault()"
+        >
+          <svg lucideTrash></svg>
+        </button>
+      </div>
+    </a>
+    <a
+      routerLink="/dashboard/edit-budget/1"
+      class="w-full bg-white rounded-lg px-4 py-4 flex flex-col justify-between mb-3 shadow-lg cursor-pointer hover:bg-gray-200 transition-colors"
+    >
+      <div class="flex flex-row justify-between gap-3 mb-3">
+        <p class="text-lg font-bold">Nombre</p>
+        <p class="text-sm font-semibold">17/05/2026 - 15/06/2026</p>
+      </div>
+      <div class="w-full h-6 rounded-lg bg-gray-300 mb-3">
+      <div class="w-[70%] h-6 rounded-lg bg-red-400 mb-3"></div>
+        <p>500 / 600</p>
+      </div>
+      <div class="flex flex-row justify-end">
+        <button
+          class="bg-red-500 flex-initial text-white py-2 rounded-lg px-10"
+          (click)="$event.preventDefault()"
+        >
+          <svg lucideTrash></svg>
+        </button>
+      </div>
+    </a>
+
+  </div>
+  <pagination />
+</div>
